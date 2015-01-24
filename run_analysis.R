@@ -47,6 +47,7 @@ names(clean_data) <- gsub("mean","Mean",names(clean_data))
 # you can enable this line here to prepend the last two columns to the beginning of the data frame  
 # clean_data <- clean_data[c(81,80,1:79)]
 
-# We can write the first table to file now 
-write.table(clean_data, "clean_data.txt")
+# Create the second set with the average of each variable for each activity and each subject 
+second_set <- aggregate(clean_data, by=list(activity = clean_data$activity, subject=clean_data$subject), mean)
+write.table(second_set,"tidy_data.txt",row.name=FALSE)
 
