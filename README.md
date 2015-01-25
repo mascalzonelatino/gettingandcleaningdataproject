@@ -1,6 +1,6 @@
 # gettingandcleaningdataproject
 
-This repository hosts my solution for the Getting And Cleaning Data project course.
+This repository hosts my solution for the Getting And Cleaning Data course project.
 
 The aim of the project is to demonstrate the ability to extract a clean data set from a number of 
 raw data sources to be used for later analysis. 
